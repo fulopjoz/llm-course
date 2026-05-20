@@ -6,6 +6,8 @@ This mini-course teaches students how to use AI tools on a real-world dataset wi
 
 The course is designed for the UCT Prague Technology Skills for Project Managers class. It is suitable for students from project management, chemistry, economics, design, IT, bioinformatics, business, and other backgrounds.
 
+A student with no coding background can complete the required course.
+
 The main learning outcome is a reusable workflow:
 
 > project question -> data/context -> AI-assisted analysis -> validation -> decision brief
@@ -28,31 +30,48 @@ For the classroom prototype, use the included small CSV sample in `../data/sampl
 
 When preparing the final live version, refresh the sample from Open Food Facts and keep only non-sensitive public product-level fields.
 
+## Required versus optional tools
+
+### Required for everyone
+
+- Spreadsheet app: Excel, Google Sheets, or LibreOffice Calc.
+- One AI chat assistant: ChatGPT, Gemini, Claude, or a similar tool available to the student.
+- Provided CSV file: `../data/sample_food_products.csv`.
+
+### Optional tools
+
+- NotebookLM for source-grounded Q&A over uploaded course files.
+- Perplexity or browser search for quick sourced orientation.
+
+### Optional technical tools
+
+- Python 3 and pandas.
+- VS Code or another editor.
+- Codex, Gemini Code Assist, GitHub Copilot, Cursor, or Claude Code.
+
+These technical tools are not required for the main course.
+
 ## Student paths
 
-### Path A: no-code path
+### Path A: beginner no-code path
 
-Recommended for most students.
+Recommended for all students and required as the baseline.
 
-Tools:
+Students inspect the CSV in a spreadsheet, use one AI chat tool to structure the analysis, validate the output manually, and write a decision brief.
 
-- spreadsheet app: Excel, Google Sheets, or LibreOffice Calc;
-- AI assistant: ChatGPT Free/Go/Plus, Gemini, or Claude;
-- optional source-grounded tool: NotebookLM;
-- optional web/source search: Perplexity or browser search.
+Students do not need GitHub or programming tools.
 
-Students do not need to install programming tools.
+### Path B: source-grounded path
 
-### Path B: optional technical path
+Recommended for students who want the AI assistant to answer from a controlled set of uploaded files.
 
-Recommended for students who already code or want to try.
+Students can upload course notes, dataset notes, and their own draft brief to NotebookLM or a similar tool.
 
-Tools:
+### Path C: optional technical path
 
-- Python 3;
-- pandas;
-- VS Code or another editor;
-- AI coding assistant: Codex in ChatGPT, Gemini Code Assist, GitHub Copilot Free, Cursor, or Claude Code.
+Recommended only for students who already code or want to try.
+
+Students use Python and a coding assistant to explain, run, or improve the small analysis script.
 
 The technical path is not required for completing the course.
 
