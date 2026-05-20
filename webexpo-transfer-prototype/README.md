@@ -24,6 +24,33 @@ Minimum student tools:
 2. One AI chat assistant such as ChatGPT, Gemini, or Claude.
 3. The provided CSV file.
 
+## Delivery options
+
+Delivery planning is in:
+
+```text
+delivery/
+```
+
+Recommended first delivery:
+
+- share a student pack through Microsoft Teams or Google Drive;
+- keep GitHub as the source of truth;
+- optionally publish a static site later;
+- consider a guided web app only after testing the file-based version.
+
+Students should not need GitHub for the main activity.
+
+Useful delivery files:
+
+- `delivery/README.md`
+- `delivery/google_drive_structure.md`
+- `delivery/teams_structure.md`
+- `delivery/student_pack_manifest.md`
+- `delivery/teacher_pitch.md`
+- `delivery/static_site_plan.md`
+- `delivery/future_web_app_plan.md`
+
 ## Audience
 
 Mixed-specialization students: project management, business, chemistry, science, IT, design, economics, bioinformatics, and other backgrounds.
