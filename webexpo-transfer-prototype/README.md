@@ -6,14 +6,32 @@ This is a lecturer-reviewable prototype for a possible contribution back to the 
 
 The goal is not to teach bioinformatics only. The goal is to translate AI/data lessons from WebExpo into a practical workflow that students from different specializations can use in project work.
 
+## Start here
+
+Begin with:
+
+```text
+START_HERE.md
+```
+
+The default student route is **no-code**.
+
+Students do not need GitHub, Python, Claude Code, Codex, Copilot, Cursor, or paid tools to complete the main activity. GitHub is used here only to host the prototype and make it easy to review. In a real class, the same files can be shared through Teams, a ZIP file, or a course folder.
+
+Minimum student tools:
+
+1. Excel, Google Sheets, or LibreOffice Calc.
+2. One AI chat assistant such as ChatGPT, Gemini, or Claude.
+3. The provided CSV file.
+
 ## Audience
 
 Mixed-specialization students: project management, business, chemistry, science, IT, design, economics, bioinformatics, and other backgrounds.
 
-The activity has two paths:
+The activity has two routes:
 
-- **No-code path:** spreadsheet + AI assistant + validation checklist.
-- **Optional technical path:** small Python script + AI coding assistant for students who code.
+- **Required no-code route:** spreadsheet + AI assistant + validation checklist.
+- **Optional technical route:** small Python script + AI coding assistant for students who already code or want to try.
 
 ## Core workflow
 
@@ -40,16 +58,16 @@ Example question:
 
 > Which product category appears less healthy based on available nutrition fields, and how confident can we be given missing or inconsistent data?
 
-Possible fields for a small teaching sample:
+Fields used in the teaching sample:
 
 - product_name
 - categories
 - countries
 - nutriscore_grade
-- energy-kcal_100g
+- energy_kcal_100g
 - sugars_100g
 - salt_100g
-- saturated-fat_100g
+- saturated_fat_100g
 - proteins_100g
 - ingredients_text
 
@@ -70,7 +88,7 @@ Students see the workflow:
 
 ### 5-12 min: real-world data demo
 
-Use a small Open Food Facts sample. Students inspect basic columns and missing values.
+Use a small Open Food Facts-style sample. Students inspect basic columns and missing values in a spreadsheet.
 
 No-code task:
 
@@ -101,67 +119,34 @@ Students turn the output into a short decision brief:
 
 ### 28-35 min: optional technical extension
 
-Students who code use Codex, Gemini Code Assist, GitHub Copilot, Cursor, or another coding assistant to create or review a small Python script that cleans the data and produces a summary table.
+Students who code can use Codex, Gemini Code Assist, GitHub Copilot, Cursor, Claude Code, or another coding assistant to explain or review a small Python script that produces a summary table.
 
 Non-coders improve the prompt, validation checklist, or decision brief.
 
 ## Student-facing prompts
 
-### Prompt 1: clarify the question
+Use `prompts/prompt_pack.md` for the full prompt set.
+
+Core prompt pattern:
 
 ```text
-We are working on a student project using this dataset description and these columns: [paste columns].
-Our goal is: [paste goal].
-Before analyzing, identify:
-1. the main decision we need to support,
-2. what the data can and cannot answer,
-3. missing context,
-4. risks if we over-trust the AI output.
-```
-
-### Prompt 2: summarize messy data
-
-```text
-Here is a sample of product data: [paste rows].
-Summarize visible patterns, but separate:
-- facts directly visible in the data,
-- assumptions,
-- possible explanations,
-- things that require verification.
-Do not invent missing values.
-```
-
-### Prompt 3: validation reviewer
-
-```text
-Act as a critical reviewer of this AI-assisted analysis: [paste analysis].
-Find unsupported claims, missing assumptions, data quality problems, possible bias, and places where a human should verify the result.
-```
-
-### Prompt 4: project brief
-
-```text
-Turn the validated findings into a one-page project decision brief with:
-objective, data source, method, findings, limitations, recommendation, and next action.
-Use language understandable to non-technical teammates.
-```
-
-### Prompt 5: optional technical path
-
-```text
-Review this small Python analysis script and suggest improvements for readability, missing-value handling, reproducibility, and documentation. Do not change the scientific interpretation unless the data supports it.
+Context: I am a student using a small public food-products dataset.
+Task: Help me identify visible patterns and data-quality risks.
+Constraints: Do not invent values. Separate facts from assumptions. Do not make medical claims.
+Output: Give me a short list of patterns and a validation checklist.
 ```
 
 ## Tool options
 
-| Use case | Low-cost/default options | Notes |
-|---|---|---|
-| General no-code AI help | ChatGPT Free, Gemini Free | Good for structuring notes, prompts, summaries, and project briefs. |
-| Source-grounded work | NotebookLM | Useful when students upload a controlled set of sources. |
-| Quick sourced research | Perplexity Free, ChatGPT/Gemini with web access where available | Use for orientation, not final truth. |
-| Spreadsheet work | Excel, Google Sheets, LibreOffice Calc | Good for non-coders. |
-| Coding assistant | Codex in ChatGPT, Gemini Code Assist, GitHub Copilot Free | Good for small scripts, README generation, and code review. |
-| Advanced coding assistant | Claude Code, Cursor, Copilot Pro | Stronger for real codebases, but not required for the basic lesson. |
+| Use case | Low-cost/default options | Required? | Notes |
+|---|---|---:|---|
+| Spreadsheet inspection | Excel, Google Sheets, LibreOffice Calc | Yes | Main tool for checking data manually. |
+| General no-code AI help | ChatGPT, Gemini, Claude | Yes, choose one | Good for structuring notes, prompts, summaries, and project briefs. |
+| Source-grounded work | NotebookLM | Optional | Useful when students upload a controlled set of course files. |
+| Quick sourced research | Perplexity or browser search | Optional | Use for orientation, not final truth. |
+| Coding assistant | Codex, Gemini Code Assist, GitHub Copilot, Cursor | Optional technical | Good for explaining or reviewing the optional Python script. |
+| Advanced coding assistant | Claude Code | Advanced optional | Powerful for code projects, but not needed for the main activity. |
+| GitHub | Repository hosting | Not required for students | Used here only to host the prototype. |
 
 ## Connection to WebExpo
 
