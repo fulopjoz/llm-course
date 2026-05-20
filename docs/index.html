@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI for student projects</title>
+  <style>
+    :root { --bg: #f7f7f5; --card: #ffffff; --text: #1f2933; --muted: #5b6673; --line: #d8dee4; --accent: #234f8f; }
+    body { margin: 0; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: var(--bg); color: var(--text); line-height: 1.55; }
+    header { background: #111827; color: white; padding: 56px 20px; }
+    header div, main { max-width: 980px; margin: 0 auto; }
+    h1 { font-size: 2.35rem; line-height: 1.15; margin: 0 0 12px; }
+    h2 { margin-top: 34px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+    h3 { margin-top: 24px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .subtitle { color: #d1d5db; font-size: 1.15rem; max-width: 760px; }
+    main { padding: 28px 20px 60px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin: 18px 0; }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 18px; box-shadow: 0 1px 2px rgba(0,0,0,0.04); }
+    .card h3 { margin-top: 0; }
+    .pill { display: inline-block; font-size: 0.78rem; font-weight: 600; background: #e8f1ff; color: #153f75; border-radius: 999px; padding: 4px 10px; margin-bottom: 8px; }
+    .muted { color: var(--muted); }
+    code { background: #eef1f4; padding: 2px 5px; border-radius: 4px; }
+    ul { padding-left: 22px; }
+    .warning { background: #fff7ed; border: 1px solid #fed7aa; padding: 14px 16px; border-radius: 10px; }
+    footer { max-width: 980px; margin: 0 auto; padding: 24px 20px 40px; color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>AI for student projects</h1>
+    <p class="subtitle">From messy information to reliable decisions. A beginner-first WebExpo transfer activity for UCT Prague Technology Skills for Project Managers.</p>
+  </div>
+</header>
+<main>
+  <section class="warning">
+    <strong>Beginner-first:</strong> students do not need GitHub, Python, Codex, Claude Code, Copilot, Cursor, or paid tools. The required route uses a spreadsheet, one AI chat assistant, and a CSV file.
+  </section>
+
+  <h2>Start here</h2>
+  <div class="grid">
+    <div class="card">
+      <span class="pill">Student route</span>
+      <h3>Beginner no-code path</h3>
+      <p>Open the CSV in Excel, Google Sheets, or LibreOffice. Use ChatGPT, Gemini, Claude, or another AI assistant. Validate the output and write a decision brief.</p>
+      <p><a href="https://github.com/fulopjoz/llm-course/blob/main/webexpo-transfer-prototype/START_HERE.md">Open START_HERE.md</a></p>
+    </div>
+    <div class="card">
+      <span class="pill">Facilitator route</span>
+      <h3>40-minute lesson plan</h3>
+      <p>Use the live lesson plan for a short class activity, including dataset inspection, AI prompt, validation, and decision brief.</p>
+      <p><a href="https://github.com/fulopjoz/llm-course/blob/main/webexpo-transfer-prototype/lesson_plan_40min.md">Open lesson plan</a></p>
+    </div>
+    <div class="card">
+      <span class="pill">Delivery</span>
+      <h3>Teams / Google Drive</h3>
+      <p>The recommended first delivery is a student pack shared through Teams or Google Drive. GitHub remains the source of truth.</p>
+      <p><a href="https://github.com/fulopjoz/llm-course/tree/main/webexpo-transfer-prototype/delivery">Open delivery notes</a></p>
+    </div>
+  </div>
+
+  <h2>Student materials</h2>
+  <ul>
+    <li><a href="https://github.com/fulopjoz/llm-course/blob/main/webexpo-transfer-prototype/data/sample_food_products.csv">Dataset CSV</a></li>
+    <li><a href="https://github.com/fulopjoz/llm-course/blob/main/webexpo-transfer-prototype/handout/ai_project_checklist.md">One-page AI project checklist</a></li>
+    <li><a href="https://github.com/fulopjoz/llm-course/blob/main/webexpo-transfer-prototype/prompts/prompt_pack.md">Prompt pack</a></li>
+    <li><a href="https://github.com/fulopjoz/llm-course/blob/main/webexpo-transfer-prototype/templates/decision_brief_template.md">Decision brief template</a></li>
+    <li><a href="https://github.com/fulopjoz/llm-course/blob/main/webexpo-transfer-prototype/examples/beginner_walkthrough.md">Beginner walkthrough</a></li>
+    <li><a href="https://github.com/fulopjoz/llm-course/blob/main/webexpo-transfer-prototype/examples/example_decision_brief.md">Example decision brief</a></li>
+  </ul>
+
+  <h2>Course modules</h2>
+  <div class="grid">
+    <div class="card"><h3>1. Orientation</h3><p><a href="https://github.com/fulopjoz/llm-course/blob/main/webexpo-transfer-prototype/course/01_orientation.md">Read module</a></p></div>
+    <div class="card"><h3>2. Tool setup</h3><p><a href="https://github.com/fulopjoz/llm-course/blob/main/webexpo-transfer-prototype/course/02_tool_setup.md">Read module</a></p></div>
+    <div class="card"><h3>3. Dataset walkthrough</h3><p><a href="https://github.com/fulopjoz/llm-course/blob/main/webexpo-transfer-prototype/course/03_dataset_walkthrough.md">Read module</a></p></div>
+    <div class="card"><h3>4. No-code AI workflow</h3><p><a href="https://github.com/fulopjoz/llm-course/blob/main/webexpo-transfer-prototype/course/04_ai_workflow_no_code.md">Read module</a></p></div>
+    <div class="card"><h3>5. Validation checklist</h3><p><a href="https://github.com/fulopjoz/llm-course/blob/main/webexpo-transfer-prototype/course/05_validation_checklist.md">Read module</a></p></div>
+    <div class="card"><h3>6. Decision brief</h3><p><a href="https://github.com/fulopjoz/llm-course/blob/main/webexpo-transfer-prototype/course/06_decision_brief.md">Read module</a></p></div>
+  </div>
+
+  <h2>Optional technical route</h2>
+  <p>This route is only for students who want to try Python or coding assistants such as Codex, Gemini Code Assist, Copilot, Cursor, or Claude Code.</p>
+  <ul>
+    <li><a href="https://github.com/fulopjoz/llm-course/blob/main/webexpo-transfer-prototype/course/07_optional_coding_track.md">Optional coding track</a></li>
+    <li><a href="https://github.com/fulopjoz/llm-course/tree/main/webexpo-transfer-prototype/technical_demo">Technical demo folder</a></li>
+  </ul>
+
+  <h2>Download packages</h2>
+  <p class="muted">ZIP packages are planned to be stored in <code>webexpo-transfer-prototype/packages/</code>. If binary upload is not available, use the downloadable artifacts generated from the chat session or export the student pack from the manifest.</p>
+  <ul>
+    <li><a href="https://github.com/fulopjoz/llm-course/blob/main/webexpo-transfer-prototype/delivery/student_pack_manifest.md">Student pack manifest</a></li>
+    <li><a href="https://github.com/fulopjoz/llm-course/blob/main/webexpo-transfer-prototype/delivery/google_drive_structure.md">Google Drive structure</a></li>
+    <li><a href="https://github.com/fulopjoz/llm-course/blob/main/webexpo-transfer-prototype/delivery/teams_structure.md">Teams structure</a></li>
+  </ul>
+</main>
+<footer>
+  Source repository: <a href="https://github.com/fulopjoz/llm-course/tree/main/webexpo-transfer-prototype">fulopjoz/llm-course/webexpo-transfer-prototype</a>
+</footer>
+</body>
+</html>
