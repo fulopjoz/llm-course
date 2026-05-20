@@ -1,0 +1,25 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Prompt pack</title><link rel="stylesheet" href="style.css"></head><body><header><div><h1>Prompt pack</h1><p>Copy prompts from this page. No GitHub required.</p></div></header><nav><a href="index.html">Home</a><a href="start.html">Start</a><a href="tool-setup.html">Tools</a><a href="dataset-walkthrough.html">Dataset</a><a href="no-code-ai-workflow.html">AI workflow</a><a href="validation-checklist.html">Validation</a><a href="decision-brief.html">Brief</a><a href="prompt-pack.html">Prompts</a><a href="examples.html">Examples</a><a href="technical.html">Technical</a><a href="teacher.html">Teacher</a></nav><main><section class="note">Use these prompts as scaffolds. Do not submit raw AI output as your final work.</section><h2>Clarify the question</h2><pre>I am a student analyzing a small public food-products dataset.
+The columns are: product_name, brands, categories, countries, nutriscore_grade, energy_kcal_100g, sugars_100g, salt_100g, saturated_fat_100g, proteins_100g, ingredients_text.
+
+My draft question is: [write your question].
+
+Help me improve the question so it supports a realistic project decision. Also list what this dataset can answer, what it cannot answer, and what assumptions I should avoid.</pre><h2>Inspect data-quality risks</h2><pre>Before I analyze the rows, list data-quality risks for a food-products dataset with nutrition values.
+Focus on missing values, inconsistent categories, small sample size, mixed product types, country coverage, and units.
+Return a short checklist I can use while inspecting the spreadsheet.</pre><h2>Summarize visible patterns</h2><pre>Here are rows from my dataset: [paste 10-30 rows].
+
+Summarize visible patterns, but separate:
+1. facts directly visible in the rows,
+2. possible hypotheses,
+3. assumptions,
+4. things I must verify manually.
+
+Do not invent missing values. Do not make medical claims.</pre><h2>Critical reviewer</h2><pre>Act as a critical reviewer of this analysis: [paste analysis].
+
+Find unsupported claims, claims that are too broad, missing assumptions, possible data-quality problems, and places where a human should check the spreadsheet.
+Rewrite the analysis using cautious project language.</pre><h2>Decision brief template</h2><pre>I need to write a one-page project decision brief for a mixed student team.
+The project uses a small food-products dataset.
+
+Create a fill-in template with these sections: objective, data used, method, findings, limitations, recommendation, next action, and AI-use log.
+Do not write the final answer for me. Give me questions I should answer in each section.</pre><h2>AI-use log</h2><pre>Based on this work session, help me draft an AI-use log.
+Include: tool used, what I asked AI to do, what I checked manually, what I changed after validation, and what limitations remain.
+Use concise bullet points. I will rewrite them in my own words.</pre><p><a class="btn" href="examples.html">Next: examples</a></p></main><footer><strong>Source / maintainers:</strong> <a href="https://github.com/fulopjoz/llm-course/tree/main/webexpo-transfer-prototype">GitHub source repository</a></footer></body></html>
