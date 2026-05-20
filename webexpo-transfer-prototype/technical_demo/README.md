@@ -1,8 +1,16 @@
 # Optional technical demo
 
+Do not start here if you are new to data work. Start with:
+
+```text
+../START_HERE.md
+```
+
 This folder contains a small Python demo for students who want to try a coding-assisted version of the activity.
 
-The main script is:
+The technical demo is optional. Students can complete the main course without Python, GitHub, Codex, Claude Code, Copilot, Cursor, or any coding assistant.
+
+## Main script
 
 ```text
 analyze_food_products.py
@@ -41,6 +49,8 @@ python webexpo-transfer-prototype/technical_demo/analyze_food_products.py
 ```
 
 ## Use with an AI coding assistant
+
+You can use Codex, Gemini Code Assist, GitHub Copilot, Cursor, Claude Code, or another coding assistant if you already have access.
 
 Recommended prompt:
 
